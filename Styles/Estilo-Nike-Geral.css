@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	padding: 0 5%;
+}
+
+header nav a {
+	font-size: 18px;
+	padding: 15px;
+	color: black;
+	border-radius: 50px;
+	font-weight: 600;
+
+}
+
+a:hover {
+	color: white;
+	background: black;
+	border-radius: 50px;
+	transition: 0.4s;
+
+}
+
+h1:hover {
+	animation: TranslateY 0.8s infinite alternate;
+	color: darkgray;
+	cursor: pointer;
+	transition: 1s;
+}
+
+@keyframes TranslateY {
+	from {
+		transform: translateY(0) scale(1);
+	}
+	to {
+		transform: translateY(-4px) scale(1.1);
+	}
+}
+
+section img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+
+}
+
+
+.background {
+	-webkit-mask-image: linear-gradient(to top, transparent 10%, white 70%);
+	
+}
+
+div#home{
+	
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	padding: 10px;
+
+}
+
+.boxbox {
+	border: 1px solid black;
+ 	padding: 10px;
+ 	width: 100%;
+ 	margin: 10px;
+ 	background: black;
+ 	color: white;
+}
+
+.boxbox:hover {
+
+	background: white;
+	color: black;
+	transition: 1s;
+	cursor: pointer;
+}
+
+
+h2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 10px;
+}
+
+h2:hover .boxbox {
+	color: deeppink;
+	cursor: pointer;
+	transition: 1s;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background: black;
+	color: white;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	height: 150px;
+
+}
+
+p {
+	display: flex;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid black;
+	height: 150px;
+	width: 730px;
+	align-items: center;
+	margin: 10px auto;
+
+}
+
+p:hover {
+	background: black;
+	color: white;
+	transition: 1s;
+	cursor: pointer;
+
+}
+
+.conteudo {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	padding: 15px;
+}
+
+a .select {
+
+	background: black;
+	color: white;
+
+}
+
+.grid-sapatos {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-columns: 150px;
+	grid-auto-rows: 100px;
+	gap: 20px;
+
+	padding: 10px;
+
+
+}
+
+.grid-box1 {
+	grid-column: span 3;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	color: black;
+	border: 3px solid black;
+}
+
+.grid-box2 {
+	grid-column: span 6;
+	grid-row: span 2;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	color: black;
+	border: 3px solid black;
+
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.grid-box3 {
+	grid-row: span 2;
+	grid-column: span 3;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	border: 3px solid black;
+	box-shadow: 8px px rgba(0, 0, 0, 0.5);
+
+}
+
+.grid-box3:hover{
+	background: black;
+	color: white;
+	transition: 2s;
+	cursor: default;
+
+}
+
+.wrapper {
+
+	width: 90%;
+	max-width:  1536px;
+	margin-inline: auto;
+	position: relative;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0) 20%,rgba(0, 0, 0, 1.0) 80%, rgba(0, 0, 0, 0));
+	
+}
+
+@keyframes scrollleft {
+
+	to {
+		left: -200px;
+	}
+}
+
+.item {
+	width: 200px;
+	height: 100px;
+	border-radius: 6px;
+	position: absolute;	
+	left: 100%;
+	animation: scrollleft 30s linear infinite;
+	border: 1px solid black;
+	text-align: center;
+	padding: 30px;
+
+
+
+
+	
+}
+
+.item1 {
+	animation-delay: calc(30s / 7 * (7 - 1) * -1) ;
+}
+
+.item2 {
+	animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+.item3 {
+	animation-delay:calc(30s / 7 * (7 - 3) * -1) ;
+}
+.item4 {
+	animation-delay:calc(30s / 7 * (7 - 4) * -1) ;
+}
+.item5 {
+	animation-delay:calc(30s / 7 * (7 - 5) * -1) ;
+}
+.item6 {
+	animation-delay:calc(30s / 7 * (7 - 6) * -1) ;
+}
+.item7 {
+	animation-delay:calc(30s / 7 * (7 - 7) * -1) ;
+}
+
