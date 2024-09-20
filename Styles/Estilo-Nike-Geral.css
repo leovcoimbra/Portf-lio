@@ -176,7 +176,7 @@ a .select {
 	align-items: center;
 	justify-content: center;
 	color: black;
-	border: 3px solid black;
+	border: 2px solid black;
 }
 
 .grid-box2 {
@@ -186,9 +186,9 @@ a .select {
 	align-items: center;
 	justify-content: center;
 	color: black;
-	border: 3px solid black;
+	border: 2px solid black;
 
-	box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .grid-box3 {
@@ -198,8 +198,8 @@ a .select {
 	align-items: center;
 	justify-content: center;
 	background-color: white;
-	border: 3px solid black;
-	box-shadow: 8px px rgba(0, 0, 0, 0.5);
+	border: 2px solid black;
+	box-shadow: 2px px rgba(0, 0, 0, 0.5);
 
 }
 
@@ -213,13 +213,11 @@ a .select {
 
 .wrapper {
 
-	width: 90%;
+	width: 110%;
 	max-width:  1536px;
 	margin-inline: auto;
-	position: relative;
-	height: 100px;
+	height: 120px;
 	margin-top: 10px;
-	margin-bottom: 10px;
 	overflow: hidden;
 	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0) 20%,rgba(0, 0, 0, 1.0) 80%, rgba(0, 0, 0, 0));
 	
@@ -233,20 +231,16 @@ a .select {
 }
 
 .item {
-	width: 200px;
+	width: 180px;
 	height: 100px;
 	border-radius: 6px;
 	position: absolute;	
-	left: 100%;
+	left: 1356px;
 	animation: scrollleft 30s linear infinite;
 	border: 1px solid black;
 	text-align: center;
-	padding: 30px;
+	padding: 1px;
 
-
-
-
-	
 }
 
 .item1 {
@@ -270,5 +264,71 @@ a .select {
 }
 .item7 {
 	animation-delay:calc(30s / 7 * (7 - 7) * -1) ;
+}
+
+#formulário {
+	background-color: white;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#formulário .Formulariocontato {
+	
+	height: 350px;
+	background-color: rgb(255, 244, 227);
+	padding-top: 20px;
+	padding-bottom: 40px;
+	
+}
+
+.contatobackground {
+	background-color: black;
+	width: 440px;
+	height: 50px;
+	border-radius: 10px;
+	color: wheat;
+	padding: 10px;
+	margin: 2px;
+}
+
+.checkbox {
+	margin: 5px;
+}
+
+.botão-contato {
+	width: 440px;
+	height: 50px;
+	background-color: black;
+	color: wheat;
+	border-radius: 10px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+
+
+
+.botão-contato:hover {
+	background-color: wheat;
+	color: rgb(0, 0, 0);
+	transition: 0.5s;
+	animation: MoverY 0.8s infinite alternate;
+
+}
+
+@keyframes MoverY {
+
+	from {
+		transform: TranslateY(0px) scale(1);
+	}
+	to {
+		transform: TranslateY(1px) scale(1.05);
+	}
+	
+}
+
+::placeholder {
+	color: wheat;
 }
 
