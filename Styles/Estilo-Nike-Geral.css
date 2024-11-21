@@ -7,8 +7,11 @@
 	outline: 0;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
+	
 
 }
+
+
 
 body {
 	width: 100%;
@@ -21,6 +24,8 @@ header {
 	align-items: center;
 	height: 100px;
 	padding: 0 5%;
+	
+	
 }
 
 header nav a {
@@ -32,13 +37,20 @@ header nav a {
 
 }
 
-a:hover {
+header a:hover {
 	color: white;
 	background: black;
 	border-radius: 50px;
 	transition: 0.4s;
 
 }
+
+.select { 
+	background-color: black;
+	color: white;
+	
+}
+
 
 h1:hover {
 	animation: TranslateY 0.8s infinite alternate;
@@ -60,33 +72,40 @@ section img {
 	width: 100%;
 	height: 500px;
 	object-fit: cover;
+	
 
 }
 
 
 .background {
-	-webkit-mask-image: linear-gradient(to top, transparent 10%, white 70%);
+	mask-image: linear-gradient(to top, transparent 10%, white 70%);
 	
 }
 
 div#home{
 	
 	display: flex;
-	justify-content: space-around;
-	width: 100%;
+	
+	
 	height: 200px;
 	text-align: center;
-	padding: 10px;
 
 }
 
 .boxbox {
 	border: 1px solid black;
  	padding: 10px;
+	justify-content: center;
  	width: 100%;
  	margin: 10px;
  	background: black;
  	color: white;
+	padding-top: 30px;
+	
+}
+
+.boxbox i { 
+	font-size: 2rem;
 }
 
 .boxbox:hover {
@@ -95,6 +114,15 @@ div#home{
 	color: black;
 	transition: 1s;
 	cursor: pointer;
+}
+
+.grid-box2.transition-color:hover{
+	background-color: black;
+	color: white;
+	transition: 0.8s;
+	
+
+	
 }
 
 
@@ -119,7 +147,6 @@ footer {
 	align-items: center;
 	text-align: center;
 	width: 100%;
-	padding: 10px;
 	height: 150px;
 
 }
@@ -128,7 +155,6 @@ p {
 	display: flex;
 	text-align: center;
 	padding: 10px;
-	border: 1px solid black;
 	height: 150px;
 	width: 730px;
 	align-items: center;
@@ -136,11 +162,34 @@ p {
 
 }
 
-p:hover {
-	background: black;
+.conteudo p {
+	display: flex;
+	text-align: center;
+	padding: 10px;
+	height: 150px;
+	width: 730px;
+	align-items: center;
+	margin: 10px auto;
+	background-color: black;
 	color: white;
+}
+
+.conteudo p:hover {
+	
+	background-color: white;
+	color: black;
 	transition: 1s;
 	cursor: pointer;
+	
+}
+
+.grid-box2:hover {
+
+	background-color: black;
+	color: white;
+	transition: 0.8s;
+	
+	
 
 }
 
@@ -149,12 +198,14 @@ p:hover {
 	text-align: center;
 	justify-content: space-around;
 	padding: 15px;
+	
 }
 
 a .select {
 
 	background: black;
 	color: white;
+	
 
 }
 
@@ -164,10 +215,26 @@ a .select {
 	grid-auto-columns: 150px;
 	grid-auto-rows: 100px;
 	gap: 20px;
-
 	padding: 10px;
+	
 
 
+}
+
+.grid-camisas {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-columns: 150px;
+	grid-auto-rows: 100px;
+	gap: 20px;
+	padding: 10px;
+}
+
+.grid-camisas .grid-box3 img{
+	width: 400px;
+	margin-bottom: 10%;
+	cursor: pointer;
+	
 }
 
 .grid-box1 {
@@ -179,6 +246,37 @@ a .select {
 	border: 2px solid black;
 }
 
+.grid-minibox1 {
+	grid-column: span 3;
+	display: flex; 
+	align-items: center;
+	justify-content: center;
+	color: black;
+	border: 2px solid black;
+	font-size: 20px;
+}
+
+.grid-minibox1:hover {
+	background-color: black;
+	color: white;
+	transition: 0.8s;
+	cursor: pointer;
+
+}
+
+.grid-minibox1:hover a {
+	color: white;
+}
+
+.grid-minibox1 a {
+	color: black;
+}
+
+
+
+
+
+
 .grid-box2 {
 	grid-column: span 6;
 	grid-row: span 2;
@@ -187,12 +285,11 @@ a .select {
 	justify-content: center;
 	color: black;
 	border: 2px solid black;
-
-	box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .grid-box3 {
-	grid-row: span 2;
+	grid-row: span 4;
 	grid-column: span 3;
 	display: flex; 
 	align-items: center;
@@ -200,74 +297,47 @@ a .select {
 	background-color: white;
 	border: 2px solid black;
 	box-shadow: 2px px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	
 
 }
 
+.grid-box3 img {
+	width: 600px;
+	margin-bottom: 10%;
+	cursor: pointer;
+	padding-top: 10px;
+	
+
+}
+
+
+
+
+
+.grid-box3 .acertar1{
+	padding-right: 60px;
+	width: 600px;
+
+}
+
+.grid-box3 img:hover {
+	transform: scale(1.2);
+	transition: 1.5s;
+}
+
+
 .grid-box3:hover{
-	background: black;
-	color: white;
+	
 	transition: 2s;
 	cursor: default;
 
 }
 
-.wrapper {
 
-	width: 110%;
-	max-width:  1536px;
-	margin-inline: auto;
-	height: 120px;
-	margin-top: 10px;
-	overflow: hidden;
-	mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0) 20%,rgba(0, 0, 0, 1.0) 80%, rgba(0, 0, 0, 0));
-	
-}
-
-@keyframes scrollleft {
-
-	to {
-		left: -200px;
-	}
-}
-
-.item {
-	width: 180px;
-	height: 100px;
-	border-radius: 6px;
-	position: absolute;	
-	left: 1356px;
-	animation: scrollleft 30s linear infinite;
-	border: 1px solid black;
-	text-align: center;
-	padding: 1px;
-
-}
-
-.item1 {
-	animation-delay: calc(30s / 7 * (7 - 1) * -1) ;
-}
-
-.item2 {
-	animation-delay: calc(30s / 7 * (7 - 2) * -1);
-}
-.item3 {
-	animation-delay:calc(30s / 7 * (7 - 3) * -1) ;
-}
-.item4 {
-	animation-delay:calc(30s / 7 * (7 - 4) * -1) ;
-}
-.item5 {
-	animation-delay:calc(30s / 7 * (7 - 5) * -1) ;
-}
-.item6 {
-	animation-delay:calc(30s / 7 * (7 - 6) * -1) ;
-}
-.item7 {
-	animation-delay:calc(30s / 7 * (7 - 7) * -1) ;
-}
 
 #formulário {
-	background-color: white;
+	
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -277,18 +347,18 @@ a .select {
 #formulário .Formulariocontato {
 	
 	height: 350px;
-	background-color: rgb(255, 244, 227);
+	background-color: rgb(250, 177, 67);
 	padding-top: 20px;
 	padding-bottom: 40px;
 	
 }
 
 .contatobackground {
-	background-color: black;
+	background-color: rgb(0, 0, 0);
 	width: 440px;
 	height: 50px;
 	border-radius: 10px;
-	color: wheat;
+	color: rgb(250, 177, 67);
 	padding: 10px;
 	margin: 2px;
 }
@@ -301,7 +371,7 @@ a .select {
 	width: 440px;
 	height: 50px;
 	background-color: black;
-	color: wheat;
+	color: rgb(255, 255, 255);
 	border-radius: 10px;
 	padding-right: 10px;
 	cursor: pointer;
@@ -310,8 +380,8 @@ a .select {
 
 
 .botão-contato:hover {
-	background-color: wheat;
-	color: rgb(0, 0, 0);
+	background-color: rgb(242, 242, 242);
+	color:rgb(0, 0, 0);
 	transition: 0.5s;
 	animation: MoverY 0.8s infinite alternate;
 
@@ -329,6 +399,47 @@ a .select {
 }
 
 ::placeholder {
-	color: wheat;
+	color: rgb(250, 177, 67);
+
 }
 
+::placeholder {
+	color: rgb(0, 0, 0);
+	
+
+}
+:placeholder-shown {
+	background-color: white;
+}
+
+.slide-infinito img {
+	
+	margin: 4rem 3rem;
+}
+
+
+ 
+.slide-infinito {
+	display: inline-block;
+	animation: 30s slide infinite linear;
+}
+
+.scroller {
+	overflow: hidden;
+	white-space: nowrap;
+	padding: 10px
+
+}
+
+
+
+@keyframes slide {
+
+	from {
+		transform: translateX(0);
+	}
+	
+	to {
+		transform: translateX(-100%);
+	}
+}
